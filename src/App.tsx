@@ -1,12 +1,11 @@
-import { useState } from 'react'
+import Background from "./components/Background/Background"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+      <Background/>
       <h1>Vite + React</h1>
-      
     </>
   )
 }
