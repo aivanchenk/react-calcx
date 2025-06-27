@@ -10,7 +10,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: url("@assets/background.png") no-repeat center center;
+    background: url("@assets/background.jpg") no-repeat center center;
     background-size: cover;
     z-index: 0;
   }
@@ -20,7 +20,7 @@
   position: absolute;
   inset: 0;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   z-index: 1;
 }

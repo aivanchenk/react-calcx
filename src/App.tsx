@@ -1,13 +1,13 @@
-import Background from "./components/Background/Background"
+import { Background } from "./components";
+import { CalculatorBox } from "./components";
 
 function App() {
-
   return (
     <>
-      <Background/>
-      <h1>Vite + React</h1>
+      <Background />
+      <CalculatorBox />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

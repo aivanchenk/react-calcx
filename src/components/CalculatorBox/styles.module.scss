@@ -1,0 +1,13 @@
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 1px -2px 18px 1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 1px -2px 18px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 1px -2px 18px 1px rgba(0, 0, 0, 0.05);
+}
