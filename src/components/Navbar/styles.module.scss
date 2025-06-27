@@ -1,0 +1,14 @@
+@use "/src/components/variables.scss" as *;
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background-color: $color-base-white;
+  z-index: 10;
+  box-shadow: $shadow-soft;
+  -webkit-box-shadow: $shadow-soft;
+  -moz-box-shadow: $shadow-soft;
+}

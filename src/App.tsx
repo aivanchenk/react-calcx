@@ -1,11 +1,11 @@
-import { Background } from "./components";
-import { CalculatorBox } from "./components";
+import Page from "./components/page";
+import { Navbar } from "./components";
 
 function App() {
   return (
     <>
-      <Background />
-      <CalculatorBox />
+      <Navbar />
+      <Page />
     </>
   );
 }
