@@ -1,11 +1,11 @@
-import Page from "./components/page";
-import { Navbar } from "./components";
+import CalcCard from "./pages/CalcCard/CalcCard";
+
+import "./app.scss";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Page />
+      <CalcCard/>
     </>
   );
 }
