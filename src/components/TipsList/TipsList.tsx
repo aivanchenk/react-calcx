@@ -1,31 +1,37 @@
-import React from "react";
+import styles from "./styles.module.scss";
+
+type Tip = {
+  header: string;
+  description: string;
+};
+
+const list: Tip[] = [
+  {
+    header: "Tips – 1",
+    description:
+      "Press T to swap instantly between calming dark or bright light themes.",
+  },
+  {
+    header: "Tips – 2",
+    description:
+      "Tap the mic, speak normally—your spoken numbers are transcribed and solved instantly.",
+  },
+  {
+    header: "Tips – 3",
+    description:
+      "Open History, click any line to copy its result straight into the input.",
+  },
+];
 
 export default function TipsList() {
   return (
-    <div className="tips">
-      <article className="tip">
-        <h2>Tips – 1</h2>
-        <p>
-          sometimes referred to as ‘lipsum’, is the placeholder text used in
-          design when creating content.
-        </p>
-      </article>
-
-      <article className="tip">
-        <h2>Tips – 2</h2>
-        <p>
-          sometimes referred to as ‘lipsum’, is the placeholder text used in
-          design when creating content.
-        </p>
-      </article>
-
-      <article className="tip">
-        <h2>Tips – 3</h2>
-        <p>
-          sometimes referred to as ‘lipsum’, is the placeholder text used in
-          design when creating content.
-        </p>
-      </article>
+    <div className={styles.tips}>
+      {list.map(({ header, description }) => (
+        <article className="tip">
+          <h2 className={styles.tipTitle}>{header}</h2>
+          <p className={styles.tipDesc}>{description}</p>
+        </article>
+      ))}
     </div>
   );
 }

@@ -4,13 +4,14 @@ import TipsList from "../../components/TipsList/TipsList";
 
 import styles from "./styles.module.scss";
 
-export default function CalcCard () {
-    return (
-        <div className={styles.pageBackground}>
-            <div className={styles.pageForeground}>
-                <Headline/>
-                <TipsList/>
-            </div>
-        </div>
-    );
+export default function CalcCard() {
+  return (
+    <div className={styles.calcCard}>
+      <div className={styles.infoPanel}>
+        <Headline />
+        <TipsList />
+      </div>
+      <div className={styles.calcPanel}></div>
+    </div>
+  );
 }

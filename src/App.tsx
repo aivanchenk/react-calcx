@@ -5,7 +5,11 @@ import "./app.scss";
 function App() {
   return (
     <>
-      <CalcCard/>
+      <div className="pageBackground">
+        <div className="pageForeground">
+          <CalcCard />
+        </div>
+      </div>
     </>
   );
 }
