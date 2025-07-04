@@ -1,0 +1,19 @@
+.keypad {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.grid,
+.controls {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 12px;
+}
+
+.position {
+  grid-column: 5 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
