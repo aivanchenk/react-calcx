@@ -25,4 +25,10 @@
     background: #efefef;
     border: 1px solid rgb(209, 209, 209);
   }
+
+  &.scientific {
+    @include breakpoint(sm) {
+      display: none;
+    }
+  }
 }

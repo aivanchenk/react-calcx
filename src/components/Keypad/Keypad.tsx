@@ -41,12 +41,12 @@ export default function Keypad({ valueState }: KeyProps) {
         </div>
       </div>
       <div className={styles.grid}>
-        {buttonList.map(({ dataKey, content, primary }) => (
+        {buttonList.map(({ dataKey, content, className }) => (
           <Button
             dataKey={dataKey}
             content={content}
             onClick={() => handleClick(dataKey)}
-            primary={primary}
+            className={className}
             key={dataKey}
           ></Button>
         ))}

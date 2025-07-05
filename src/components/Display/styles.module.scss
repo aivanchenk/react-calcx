@@ -21,4 +21,8 @@
     word-break: keep-all;
     overflow-wrap: anywhere;
   }
+
+  @include breakpoint(sm) {
+    height: 30%;
+  }
 }
