@@ -7,10 +7,13 @@ interface DisplayProps {
 }
 
 export default function Display({ valueState }: DisplayProps) {
-  const [value] = valueState;
+  const [raw] = valueState;
+
+  const pretty = raw.replace(/([+\-*/×÷^()])/g, "$1\u200B");
+
   return (
     <div className={styles.display}>
-      <div className={styles.value}>{value}</div>
+      <div className={styles.value}>{pretty}</div>
     </div>
   );
 }

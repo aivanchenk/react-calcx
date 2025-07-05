@@ -1,16 +1,16 @@
 import type { buttonProps } from "../Button/Button";
 
-type Key = Pick<buttonProps, "dataKey" | "content">;
+type Key = Omit<buttonProps, "onClick">;
 
 export const buttonList: Key[] = [
   // ───────────── 1st row ─────────────
-  { dataKey: "change", content: "⇦⇨" }, // back-space
-  { dataKey: "rad", content: "RAD" },
-  { dataKey: "sqrt", content: "√" },
-  { dataKey: "clear", content: "C" },
-  { dataKey: "paren", content: "(" },
-  { dataKey: "percent", content: "%" },
-  { dataKey: "divide", content: "÷" },
+  { dataKey: "⇦⇨", content: "⇦⇨" },
+  { dataKey: "RAD", content: "RAD" },
+  { dataKey: "√", content: "√" },
+  { dataKey: "C", content: "C", primary: "red" },
+  { dataKey: "(", content: "(" },
+  { dataKey: "%", content: "%" },
+  { dataKey: "÷", content: "÷" },
 
   // ───────────── 2nd row ─────────────
   { dataKey: "sin", content: "sin" },
@@ -19,32 +19,32 @@ export const buttonList: Key[] = [
   { dataKey: "7", content: "7" },
   { dataKey: "8", content: "8" },
   { dataKey: "9", content: "9" },
-  { dataKey: "multiply", content: "×" },
+  { dataKey: "×", content: "×" },
 
   // ───────────── 3rd row ─────────────
   { dataKey: "ln", content: "ln" },
   { dataKey: "log", content: "log" },
-  { dataKey: "recip", content: "1/x" },
+  { dataKey: "1/x", content: "1/x" },
   { dataKey: "4", content: "4" },
   { dataKey: "5", content: "5" },
   { dataKey: "6", content: "6" },
-  { dataKey: "subtract", content: "−" },
+  { dataKey: "−", content: "−" },
 
   // ───────────── 4th row ─────────────
-  { dataKey: "exp", content: "eˣ" },
-  { dataKey: "square", content: "x²" },
-  { dataKey: "power", content: "xʸ" },
+  { dataKey: "eˣ", content: "eˣ" },
+  { dataKey: "x²", content: "x²" },
+  { dataKey: "xʸ", content: "xʸ" },
   { dataKey: "1", content: "1" },
   { dataKey: "2", content: "2" },
   { dataKey: "3", content: "3" },
-  { dataKey: "add", content: "+" },
+  { dataKey: "+", content: "+" },
 
   // ───────────── 5th row ─────────────
-  { dataKey: "abs", content: "|x|" },
-  { dataKey: "pi", content: "π" },
+  { dataKey: "|x|", content: "|x|" },
+  { dataKey: "π", content: "π" },
   { dataKey: "e", content: "e" },
-  { dataKey: "sign", content: "±" },
+  { dataKey: "±", content: "±" },
   { dataKey: "0", content: "0" },
-  { dataKey: "dot", content: "." },
-  { dataKey: "equals", content: "=" },
+  { dataKey: ".", content: "." },
+  { dataKey: "=", content: "=", primary: "blue" },
 ];

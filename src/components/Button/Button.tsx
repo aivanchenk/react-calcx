@@ -5,7 +5,7 @@ export interface buttonProps {
   dataKey: string;
   content: string | ReactElement;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
-  primary?: boolean;
+  primary?: "red" | "blue" | undefined;
 }
 
 export default function Button({
@@ -18,7 +18,13 @@ export default function Button({
     <button
       data-key={dataKey}
       onClick={onClick}
-      className={`${styles.button} ${primary ? styles.primary : null}`}
+      className={`${styles.button} ${
+        primary === "red"
+          ? styles.primaryRed
+          : primary === "blue"
+          ? styles.primaryBlue
+          : null
+      }`}
     >
       {content}
     </button>
