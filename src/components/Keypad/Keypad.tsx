@@ -10,7 +10,7 @@ interface KeyProps {
 }
 
 export default function Keypad({ valueState }: KeyProps) {
-  const [value, setValue] = valueState;
+  const [, setValue] = valueState;
 
   const handleClick = (digit: string) => setValue((prev) => prev + digit);
 

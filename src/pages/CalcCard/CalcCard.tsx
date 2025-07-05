@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Headline from "../../components/Headline/Headline";
 import TipsList from "../../components/TipsList/TipsList";
 import Display from "../../components/Display/Display";
