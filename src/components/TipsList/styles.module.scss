@@ -1,0 +1,19 @@
+@use "../../variables.scss" as *;
+
+.tips {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tipTitle {
+  font: 600 18px/1.3 $font-heading;
+  color: $color-text-primary;
+  margin: 0 0 4px;
+}
+
+.tipDesc {
+  font: 400 12px/1.25 $font-body;
+  color: $color-text-secondary;
+  margin: 0;
+}

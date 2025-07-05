@@ -1,0 +1,13 @@
+@use "../../variables.scss" as *;
+
+.headline {
+  font: 700 28px/1.25 $font-heading;
+  color: $color-text-primary;
+  margin: 0 0 16px;
+}
+
+.description {
+  font: 400 12px/1.25 $font-body;
+  color: $color-text-secondary;
+  margin: 0;
+}
