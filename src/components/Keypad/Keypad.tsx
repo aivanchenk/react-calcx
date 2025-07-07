@@ -1,6 +1,5 @@
 import Button from '../Button/Button';
 import { buttonList } from './data';
-
 import styles from './styles.module.scss';
 
 type ValueState = [string, React.Dispatch<React.SetStateAction<string>>];
