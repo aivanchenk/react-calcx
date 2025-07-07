@@ -2,15 +2,11 @@ import Button from '../Button/Button';
 import { buttonList } from './data';
 import styles from './styles.module.scss';
 
-type ValueState = [string, React.Dispatch<React.SetStateAction<string>>];
-
 interface KeyProps {
-  valueState: ValueState;
+  setValue: React.Dispatch<React.SetStateAction<string>>;
 }
 
-export default function Keypad({ valueState }: KeyProps) {
-  const [, setValue] = valueState;
-
+export default function Keypad({ setValue }: KeyProps) {
   const handleClick = (digit: string) => setValue((prev) => prev + digit);
 
   return (

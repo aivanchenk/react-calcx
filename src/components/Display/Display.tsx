@@ -9,7 +9,8 @@ interface DisplayProps {
 export default function Display({ valueState }: DisplayProps) {
   const [raw] = valueState;
 
-  const pretty = raw.replace(/([+\-*/×÷^()])/g, '$1\u200B');
+  const ZERO_WIDTH_SPACE = '$1\u200B';
+  const pretty = raw.replace(/([+\-*/×÷^()])/g, ZERO_WIDTH_SPACE);
 
   return (
     <div className={styles.display}>

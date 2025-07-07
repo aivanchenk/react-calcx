@@ -7,7 +7,7 @@ import TipsList from '../../components/TipsList/TipsList';
 import styles from './styles.module.scss';
 
 export default function CalcCard() {
-  const valueState = useState('');
+  const [value, setValue] = useState('');
 
   return (
     <div className={styles.calcCard}>
@@ -16,8 +16,8 @@ export default function CalcCard() {
         <TipsList />
       </div>
       <div className={styles.calcPanel}>
-        <Display valueState={valueState} />
-        <Keypad valueState={valueState} />
+        <Display value={value} />
+        <Keypad setValue={setValue} />
       </div>
     </div>
   );
