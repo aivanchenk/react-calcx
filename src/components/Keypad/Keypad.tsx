@@ -16,18 +16,18 @@ export default function Keypad({ valueState }: KeyProps) {
   return (
     <div className={styles.keypad}>
       <div className={styles.controls}>
-        <Button dataKey="history" content="H" onClick={() => handleClick('history')}></Button>
+        <Button dataKey="history" children="H" onClick={() => handleClick('history')}></Button>
         <div className={styles.position}>
-          <Button dataKey="pervious" content="←" onClick={() => handleClick('pervious')}></Button>
-          <Button dataKey="next" content="→" onClick={() => handleClick('next')}></Button>
-          <Button dataKey="back" content={'⌫'} onClick={() => handleClick('back')}></Button>
+          <Button dataKey="pervious" children="←" onClick={() => handleClick('pervious')}></Button>
+          <Button dataKey="next" children="→" onClick={() => handleClick('next')}></Button>
+          <Button dataKey="back" children={'⌫'} onClick={() => handleClick('back')}></Button>
         </div>
       </div>
       <div className={styles.grid}>
         {buttonList.map(({ dataKey, content, className }) => (
           <Button
             dataKey={dataKey}
-            content={content}
+            children={content}
             onClick={() => handleClick(dataKey)}
             className={className}
             key={dataKey}
