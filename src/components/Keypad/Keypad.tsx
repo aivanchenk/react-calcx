@@ -1,5 +1,5 @@
 import Button from '../Button/Button';
-import { buttonList } from './data';
+import { BUTTON_LIST } from './data';
 import styles from './styles.module.scss';
 
 interface KeyProps {
@@ -20,10 +20,10 @@ export default function Keypad({ setValue }: KeyProps) {
         </div>
       </div>
       <div className={styles.grid}>
-        {buttonList.map(({ dataKey, content, className }) => (
+        {BUTTON_LIST.map(({ dataKey, children, className }) => (
           <Button
             dataKey={dataKey}
-            children={content}
+            children={children}
             onClick={() => handleClick(dataKey)}
             className={className}
             key={dataKey}

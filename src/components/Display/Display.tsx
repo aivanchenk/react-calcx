@@ -1,20 +1,16 @@
 import styles from './styles.module.scss';
 
-type ValueState = [string, React.Dispatch<React.SetStateAction<string>>];
-
 interface DisplayProps {
-  valueState: ValueState;
+  value: string;
 }
 
-export default function Display({ valueState }: DisplayProps) {
-  const [raw] = valueState;
-
+export default function Display({ value }: DisplayProps) {
   const ZERO_WIDTH_SPACE = '$1\u200B';
-  const pretty = raw.replace(/([+\-*/×÷^()])/g, ZERO_WIDTH_SPACE);
+  const formattedValue = value.replace(/([+\-*/×÷^()])/g, ZERO_WIDTH_SPACE);
 
   return (
     <div className={styles.display}>
-      <div className={styles.value}>{pretty}</div>
+      <div className={styles.value}>{formattedValue}</div>
     </div>
   );
 }
