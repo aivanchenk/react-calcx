@@ -1,7 +1,7 @@
-import Button from "../Button/Button";
-import { buttonList } from "./data";
+import Button from '../Button/Button';
+import { buttonList } from './data';
 
-import styles from "./styles.module.scss";
+import styles from './styles.module.scss';
 
 type ValueState = [string, React.Dispatch<React.SetStateAction<string>>];
 
@@ -17,27 +17,11 @@ export default function Keypad({ valueState }: KeyProps) {
   return (
     <div className={styles.keypad}>
       <div className={styles.controls}>
-        <Button
-          dataKey="history"
-          content="H"
-          onClick={() => handleClick("history")}
-        ></Button>
+        <Button dataKey="history" content="H" onClick={() => handleClick('history')}></Button>
         <div className={styles.position}>
-          <Button
-            dataKey="pervious"
-            content="←"
-            onClick={() => handleClick("pervious")}
-          ></Button>
-          <Button
-            dataKey="next"
-            content="→"
-            onClick={() => handleClick("next")}
-          ></Button>
-          <Button
-            dataKey="back"
-            content={"⌫"}
-            onClick={() => handleClick("back")}
-          ></Button>
+          <Button dataKey="pervious" content="←" onClick={() => handleClick('pervious')}></Button>
+          <Button dataKey="next" content="→" onClick={() => handleClick('next')}></Button>
+          <Button dataKey="back" content={'⌫'} onClick={() => handleClick('back')}></Button>
         </div>
       </div>
       <div className={styles.grid}>

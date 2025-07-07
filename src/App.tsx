@@ -1,6 +1,6 @@
-import CalcCard from "./pages/CalcCard/CalcCard";
+import CalcCard from './pages/CalcCard/CalcCard';
 
-import "./app.scss";
+import './app.scss';
 
 function App() {
   return (

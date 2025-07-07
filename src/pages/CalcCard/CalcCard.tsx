@@ -1,13 +1,13 @@
-import { useState } from "react";
-import Headline from "../../components/Headline/Headline";
-import TipsList from "../../components/TipsList/TipsList";
-import Display from "../../components/Display/Display";
-import Keypad from "../../components/Keypad/Keypad";
+import { useState } from 'react';
+import Headline from '../../components/Headline/Headline';
+import TipsList from '../../components/TipsList/TipsList';
+import Display from '../../components/Display/Display';
+import Keypad from '../../components/Keypad/Keypad';
 
-import styles from "./styles.module.scss";
+import styles from './styles.module.scss';
 
 export default function CalcCard() {
-  const valueState = useState("");
+  const valueState = useState('');
 
   return (
     <div className={styles.calcCard}>

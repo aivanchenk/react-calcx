@@ -1,5 +1,5 @@
-import { list } from "./data";
-import styles from "./styles.module.scss";
+import { list } from './data';
+import styles from './styles.module.scss';
 
 export default function TipsList() {
   return (
