@@ -2,7 +2,7 @@ import type { ButtonProps } from '../Button/Button';
 
 type Key = Omit<ButtonProps, 'onClick'>;
 
-export const buttonList: Key[] = [
+export const BUTTON_LIST: Key[] = [
   // ───────────── 1st row ─────────────
   { dataKey: '⇦⇨', children: '⇦⇨', className: 'scientific' },
   { dataKey: 'RAD', children: 'RAD', className: 'scientific' },

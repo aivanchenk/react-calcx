@@ -5,6 +5,6 @@
   "trailingComma": "es5",
   "plugins": ["@trivago/prettier-plugin-sort-imports"],
   "importOrder": ["^react$", "^@?\\w", "^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
-  "importOrderSeparation": true,
+  "importOrderSeparation": false,
   "importOrderSortSpecifiers": true
 }
