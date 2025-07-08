@@ -1,0 +1,38 @@
+@use '../../styles/variables.scss' as *;
+
+.calcCard {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  padding: 32px 48px;
+  gap: 48px;
+
+  @include breakpoint(md) {
+    padding: 32px 16px;
+  }
+}
+
+.infoPanel {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+
+.calcPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+
+  @include breakpoint(md) {
+    width: 100%;
+    gap: 16px;
+  }
+}

@@ -1,0 +1,41 @@
+// Colors
+$color-base-white: #fff;
+$color-base-gray: rgb(246, 246, 246);
+$color-base-page-color: rgb(221, 228, 234);
+
+$color-text-primary: #1e2a32;
+$color-text-secondary: #596873;
+
+// Radius
+$radius-none: 0;
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 16px;
+$radius-xl: 24px;
+$radius-circle: 50%;
+
+//Shadows
+$shadow-soft: 1px -2px 18px 1px rgba(0, 0, 0, 0.05);
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap');
+$font-heading: 'Poppins', sans-serif;
+$font-body: 'Inter', sans-serif;
+
+// Mixins
+
+@mixin breakpoint($point) {
+  @if $point == sm {
+    @media (max-width: 600px) {
+      @content;
+    }
+  } @else if $point == md {
+    @media (max-width: 900px) {
+      @content;
+    }
+  } @else if $point == lg {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+}
